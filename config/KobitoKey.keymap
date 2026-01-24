@@ -133,6 +133,18 @@
             key-positions = <6 7>;
             bindings = <&mm_pipe_bslash>;
         };
+
+        combo_lbkt {
+            timeout-ms = <50>;
+            key-positions = <16 17>;
+            bindings = <&mm_lbkt_lbrc>;
+        };
+
+        combo_rbkt {
+            timeout-ms = <50>;
+            key-positions = <17 18>;
+            bindings = <&mm_rbkt_rbrc>;
+        };
     };
 
     keymap {
