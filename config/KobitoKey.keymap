@@ -29,10 +29,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mm_plus_equal: mm_plus_equal {
+        mm_equal_plus: mm_equal_plus {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp PLUS>, <&kp EQUAL>;
+            bindings = <&kp EQUAL>, <&kp PLUS>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -83,7 +83,7 @@
         combo_plus {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            bindings = <&mm_plus_equal>;
+            bindings = <&mm_equal_plus>;
         };
 
         combo_squote {
