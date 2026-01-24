@@ -61,7 +61,7 @@
         };
 
         layer1 {
-            label = "NUMBER";
+            label = "1";
             bindings = <
 &kp N1     &kp N2  &kp N3  &kp N4     &kp N5  &kp N6     &kp N7     &kp N8    &kp N9     &kp N0
 &trans     &trans  &trans  &trans     &trans  &trans     &kp MINUS  &kp LBKT  &kp RBKT   &trans
@@ -71,7 +71,7 @@
         };
 
         layer2 {
-            label = "FUNCTION";
+            label = "2";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
 &trans        &trans        &trans        &trans        &bt BT_CLR      &kp LEFT   &kp DOWN   &kp UP  &kp RIGHT  &trans
@@ -81,7 +81,7 @@
         };
 
         layer3 {
-            label = "MOUSE";
+            label = "3";
             bindings = <
 &trans       &trans  &kp LG(RIGHT)  &trans     &trans    &mkp MB1  &mkp MB3  &mkp MB2   &trans  &trans
 &kp LG(LEFT) &trans  &kp DEL        &kp RIGHT  &trans    &kp BSPC  &trans    &kp LC(K)  &trans  &trans
