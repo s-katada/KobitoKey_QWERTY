@@ -57,10 +57,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mm_pipe_slash: mm_pipe_slash {
+        mm_pipe_bslash: mm_pipe_bslash {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp PIPE>, <&kp SLASH>;
+            bindings = <&kp PIPE>, <&kp BSLH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -107,7 +107,7 @@
         combo_pipe {
             timeout-ms = <50>;
             key-positions = <6 7>;
-            bindings = <&mm_pipe_slash>;
+            bindings = <&mm_pipe_bslash>;
         };
     };
 
