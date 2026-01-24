@@ -1,0 +1,272 @@
+layout:
+  ortho_layout:
+    split: true
+    rows: 4
+    columns: 5
+    thumbs: 0
+layers:
+  default:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: '&mod_cmd_alt'}
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: ':', h: '&mod_cmd_shift', s: ;}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: '''', h: '&mod_cmd_ctrl'}
+  - ''
+  - ''
+  - LCMD
+  - LCTRL
+  - {t: LANG2, h: LSHFT}
+  - {t: ESC, h: LALT}
+  - {t: SPACE, h: '1'}
+  - {t: ENTER, h: '2'}
+  - ''
+  - ''
+  '1':
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - LEFT
+  - DOWN
+  - UP
+  - RIGHT
+  - {t: ▽, type: trans}
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: LANG1, h: LSHFT}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '2':
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - PREV
+  - PP
+  - NEXT
+  - VOL DN
+  - VOL UP
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: default, h: toggle}
+  - {t: WIN, h: toggle}
+  - ''
+  - ''
+  - BT CLR ALL
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - DEL
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '3':
+  - Gui+Sft+[
+  - Gui+Sft+]
+  - ''
+  - ''
+  - ''
+  - '&mkp MB1'
+  - '&mkp MB2'
+  - '&mkp MB3'
+  - ''
+  - {t: ▽, type: trans}
+  - Gui+[
+  - Gui+]
+  - LSHFT
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - LCTRL
+  - ''
+  - Gui+C
+  - Gui+V
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  WIN:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: '&mod_ctrl_alt'}
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - {t: ':', h: '&mod_ctrl_shift', s: ;}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - {t: '''', h: '&mod_ctrl_alt'}
+  - ''
+  - ''
+  - {t: LCTRL, h: EMACS}
+  - LCMD
+  - {t: LANG2, h: LSHFT}
+  - {t: ESC, h: LALT}
+  - {t: SPACE, h: '1'}
+  - {t: ENTER, h: '2'}
+  - ''
+  - ''
+  EMACS:
+  - Ctl+Q
+  - Ctl+W
+  - END
+  - Ctl+R
+  - Ctl+T
+  - Ctl+Y
+  - Ctl+U
+  - Ctl+I
+  - UP
+  - Ctl+O
+  - HOME
+  - Ctl+S
+  - DEL
+  - RIGHT
+  - Ctl+G
+  - BSPC
+  - Ctl+J
+  - '&macro_kill_line'
+  - Ctl+L
+  - Ctl+;
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - LEFT
+  - DOWN
+  - Ctl+M
+  - Ctl+,
+  - Ctl+.
+  - Ctl+'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Ctl+SPACE
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+combos:
+- p: [10, 11]
+  k: TAB
+- p: [7, 8]
+  k: {t: '-', s: _}
+- p: [8, 9]
+  k: {t: '=', s: +}
+- p: [18, 19]
+  k: {t: '''', s: '"'}
+- p: [28, 29]
+  k: {t: /, s: '?'}
+- p: [0, 1]
+  k: {t: '`', s: '~'}
+- p: [6, 7]
+  k: {t: '|', s: \}
+- p: [16, 17]
+  k: {t: '[', s: '{'}
+- p: [17, 18]
+  k: {t: ']', s: '}'}
