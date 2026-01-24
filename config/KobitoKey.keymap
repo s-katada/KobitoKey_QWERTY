@@ -56,7 +56,7 @@
         mm_qmark_slash: mm_qmark_slash {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp QMARK>, <&kp SLASH>;
+            bindings = <&kp SLASH>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
