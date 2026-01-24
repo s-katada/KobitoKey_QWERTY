@@ -5,6 +5,16 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    macros {
+        macro_kill_line: macro_kill_line {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp LS(END)>, <&kp DEL>;
+        };
+    };
+
     behaviors {
         colon_semi: colon_semi {
             compatible = "zmk,behavior-mod-morph";
@@ -61,6 +71,20 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&kp PIPE>, <&kp BSLH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_lbkt_lbrc: mm_lbkt_lbrc {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LBKT>, <&kp LBRC>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_rbkt_rbrc: mm_rbkt_rbrc {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp RBKT>, <&kp RBRC>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -126,9 +150,9 @@
         layer1 {
             label = "1";
             bindings = <
-&kp N1     &kp N2  &kp N3  &kp N4     &kp N5  &trans     &trans     &trans    &trans     &trans
-&kp N6     &kp N7  &kp N8  &kp N9     &kp N0  &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&trans     &trans  &trans  &trans     &trans  &trans     &trans     &trans    &trans     &trans
+&kp N1     &kp N2  &kp N3  &kp N4     &kp N5  &kp N6     &kp N7     &kp N8    &kp N9     &kp N0
+&trans     &trans  &trans  &trans     &trans  &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
+&trans     &trans  &trans  &trans     &trans  &trans     &trans     &mm_lbkt_lbrc    &mm_rbkt_rbrc     &trans
 &trans     &trans  &trans  &trans  &mt LSHFT LANG1  &trans     &trans     &trans    &trans     &trans
             >;
         };
@@ -138,7 +162,7 @@
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp F1   &kp F2   &kp F3  &kp F4  &kp F5
 &trans        &trans        &trans        &trans        &bt BT_CLR      &kp LEFT   &kp DOWN   &kp UP  &kp RIGHT  &trans
-&trans        &trans        &trans        &trans        &bt BT_CLR_ALL  &kp F11  &kp F12  &trans  &trans  &trans
+&to 0         &to 4         &trans        &trans        &bt BT_CLR_ALL  &kp F11  &kp F12  &trans  &trans  &trans
 &trans        &trans        &trans        &trans        &trans          &kp DEL  &trans   &trans  &trans  &trans
             >;
         };
@@ -150,6 +174,26 @@
 &kp LG(LEFT) &trans  &kp DEL        &kp RIGHT  &trans    &kp BSPC  &trans    &kp LC(K)  &trans  &trans
 &trans       &trans  &trans         &trans     &kp LEFT  &trans    &trans    &trans     &trans  &trans
 &kp LSHFT    &trans  &kp LCMD       &kp LALT   &to 0     &trans    &trans    &trans     &to 0   &kp RALT
+            >;
+        };
+
+        layer4 {
+            label = "WIN";
+            bindings = <
+&kp Q      &kp W     &kp E      &kp R        &kp T            &kp Y      &kp U        &kp I        &kp O      &kp P
+&kp A      &kp S     &kp D      &kp F        &kp G            &kp H      &kp J        &kp K        &kp L      &colon_semi
+&kp Z      &kp X     &kp C      &kp V        &kp B            &kp N      &kp M        &kp COMMA    &kp DOT    &kp APOS
+&kp LSHFT  &kp LALT  &lt 5 LCTRL  &kp LCMD   &mt LSHFT LANG2    &lt 3 ESC  &lt 1 SPACE  &lt 2 ENTER  &kp RSHFT  &mt LALT SLASH
+            >;
+        };
+
+        layer5 {
+            label = "EMACS";
+            bindings = <
+&kp LC(Q)  &kp LC(W)  &kp END      &kp LC(R)  &kp LC(T)    &kp LC(Y)  &kp LC(U)        &kp LC(I)  &kp UP     &kp LC(O)
+&kp HOME   &kp LC(S)  &kp DEL      &kp RIGHT  &kp LC(G)    &kp BSPC   &kp LC(J)        &macro_kill_line  &kp LC(L)  &kp LC(SEMI)
+&kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)  &kp LEFT     &kp DOWN   &kp LC(M)        &kp LC(COMMA)  &kp LC(DOT)  &kp LC(APOS)
+&trans     &trans     &trans       &trans     &trans       &trans     &kp LC(SPACE)    &trans     &trans     &trans
             >;
         };
     };
