@@ -106,7 +106,7 @@
 
         combo_pipe {
             timeout-ms = <50>;
-            key-positions = <5 6>;
+            key-positions = <6 7>;
             bindings = <&mm_pipe_slash>;
         };
     };
