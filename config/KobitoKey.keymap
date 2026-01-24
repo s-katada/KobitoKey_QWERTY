@@ -43,10 +43,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mm_qmark_bslash: mm_qmark_bslash {
+        mm_bslash_qmark: mm_bslash_qmark {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp QMARK>, <&kp BSLH>;
+            bindings = <&kp BSLH>, <&kp QMARK>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -95,7 +95,7 @@
         combo_question {
             timeout-ms = <50>;
             key-positions = <28 29>;
-            bindings = <&mm_qmark_bslash>;
+            bindings = <&mm_bslash_qmark>;
         };
 
         combo_grave {
