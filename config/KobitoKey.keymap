@@ -77,7 +77,7 @@
 &kp Q      &kp W     &kp E     &kp R        &kp T      &kp Y     &kp U        &kp I      &kp O      &kp P
 &kp A      &kp S     &kp D     &kp F        &kp G      &kp H     &kp J        &kp K      &kp L      &colon_semi
 &kp Z      &kp X     &kp C     &kp V        &kp B      &kp N     &kp M        &kp COMMA  &kp DOT    &kp APOS
-&kp LSHFT  &kp LALT  &kp LSHFT  &kp LCTRL  &ht_lang LS(LGUI) LANG2  &lt 3 ESC  &lt 1 SPACE  &lt 2 ENTER  &kp RSHFT  &mt LALT SLASH
+&kp LSHFT  &kp LALT  &kp LCMD  &kp LCTRL  &mt LSHFT LANG2  &lt 3 ESC  &lt 1 SPACE  &lt 2 ENTER  &kp RSHFT  &mt LALT SLASH
             >;
         };
 
