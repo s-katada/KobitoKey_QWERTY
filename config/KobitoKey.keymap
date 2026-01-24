@@ -285,7 +285,7 @@
             label = "3";
             bindings = <
 &kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &trans     &trans     &trans    &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&kp LSHFT         &trans            &trans     &trans     &trans    &trans    &trans    &trans    &trans  &trans
+&kp LSHFT         &kp LG(LBKT)      &kp LG(RBKT)  &trans  &trans    &trans    &trans    &trans    &trans  &trans
 &kp LCTRL         &trans            &kp LG(C)  &kp LG(V)  &trans    &trans    &trans    &trans    &trans  &trans
 &trans            &trans            &trans     &trans     &trans    &trans    &trans    &trans    &trans  &trans
             >;
