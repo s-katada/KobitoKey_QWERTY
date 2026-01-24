@@ -34,8 +34,14 @@
 
         combo_minus {
             timeout-ms = <50>;
-            key-positions = <8 9>;
+            key-positions = <7 8>;
             bindings = <&kp MINUS>;
+        };
+
+        combo_plus {
+            timeout-ms = <50>;
+            key-positions = <8 9>;
+            bindings = <&kp PLUS>;
         };
 
         combo_squote {
