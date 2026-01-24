@@ -4,17 +4,17 @@
 
 ![Keymap](images/keymap.svg)
 
-### Layer Overview
-- **default**: Mac QWERTY (Cmd+Option on A, Cmd+Shift on :, Cmd+Ctrl on ')
-- **1**: Numbers & Symbols & Arrows
-- **2**: Bluetooth & Media Control
-- **3**: Auto Mouse Layer
-- **WIN**: Windows/Linux QWERTY (Ctrl+Alt on A, Ctrl+Shift on :, Ctrl+Alt on ')
-- **EMACS**: Emacs keybindings for Windows/Linux
+### レイヤー概要
+- **Mac**: Mac用QWERTYレイヤー（Aホールド: Cmd+Option、:ホールド: Cmd+Shift、'ホールド: Cmd+Ctrl）
+- **数字**: 数字・記号・矢印キー
+- **設定**: Bluetooth・メディアコントロール
+- **マウス**: オートマウスレイヤー（トラックボール操作時に自動切替）
+- **Win**: Windows/Linux用QWERTYレイヤー（Aホールド: Ctrl+Alt、:ホールド: Ctrl+Shift、'ホールド: Ctrl+Alt）
+- **Emacs**: Windows/Linux用Emacsキーバインド
 
-### Combos
-| Keys | Output |
-|------|--------|
+### コンボ
+| キー | 出力 |
+|------|------|
 | Q+W | \` ~ |
 | U+I | - _ |
 | I+O | = + |
@@ -23,7 +23,7 @@
 | J+K | [ { |
 | K+L | ] } |
 | L+: | ' " |
-| .+/ | / ? |
+| .+' | / ? |
 
 ---
 

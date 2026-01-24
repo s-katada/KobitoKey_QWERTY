@@ -1,11 +1,11 @@
 layout:
   ortho_layout:
     split: true
-    rows: 4
+    rows: 3
     columns: 5
-    thumbs: 0
+    thumbs: 3
 layers:
-  default:
+  Mac:
   - Q
   - W
   - E
@@ -16,7 +16,7 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: '&mod_cmd_alt'}
+  - {t: A, h: Cmd+Opt}
   - S
   - D
   - F
@@ -25,7 +25,7 @@ layers:
   - J
   - K
   - L
-  - {t: ':', h: '&mod_cmd_shift', s: ;}
+  - {t: ':', h: Cmd+Shift, s: ';'}
   - Z
   - X
   - C
@@ -35,18 +35,14 @@ layers:
   - M
   - ','
   - .
-  - {t: '''', h: '&mod_cmd_ctrl'}
-  - ''
-  - ''
-  - LCMD
-  - LCTRL
-  - {t: LANG2, h: LSHFT}
-  - {t: ESC, h: LALT}
-  - {t: SPACE, h: '1'}
-  - {t: ENTER, h: '2'}
-  - ''
-  - ''
-  '1':
+  - {t: '''', h: Cmd+Ctrl}
+  - Cmd
+  - Ctrl
+  - {t: 英数, h: Shift}
+  - {t: Esc, h: Alt}
+  - {t: Space, h: 数字}
+  - {t: Enter, h: 設定}
+  数字:
   - '1'
   - '2'
   - '3'
@@ -62,10 +58,10 @@ layers:
   - '#'
   - $
   - '%'
-  - LEFT
-  - DOWN
-  - UP
-  - RIGHT
+  - ←
+  - ↓
+  - ↑
+  - →
   - {t: ▽, type: trans}
   - ^
   - '&'
@@ -79,69 +75,61 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: LANG1, h: LSHFT}
+  - {t: かな, h: Shift}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '2':
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - PREV
-  - PP
-  - NEXT
-  - VOL DN
-  - VOL UP
+  設定:
+  - {t: BT1}
+  - {t: BT2}
+  - {t: BT3}
+  - {t: BT4}
+  - {t: BT5}
+  - 前曲
+  - 再生
+  - 次曲
+  - 音量-
+  - 音量+
   - ''
   - ''
   - ''
   - ''
-  - BT CLR
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
-  - {t: default, h: toggle}
-  - {t: WIN, h: toggle}
-  - ''
-  - ''
-  - BT CLR ALL
+  - BTクリア
   - ''
   - ''
   - ''
   - ''
   - {t: ▽, type: trans}
+  - {t: Mac, h: 切替}
+  - {t: Win, h: 切替}
+  - ''
+  - ''
+  - BT全クリア
+  - ''
+  - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - DEL
+  - Del
   - {t: ▽, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  '3':
-  - Gui+Sft+[
-  - Gui+Sft+]
+  マウス:
+  - 前タブ
+  - 次タブ
   - ''
   - ''
   - ''
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '&mkp MB3'
+  - 左クリック
+  - 右クリック
+  - 中クリック
   - ''
   - {t: ▽, type: trans}
-  - Gui+[
-  - Gui+]
-  - LSHFT
+  - 戻る
+  - 進む
+  - Shift
   - ''
   - ''
   - ''
@@ -149,15 +137,15 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - LCTRL
+  - Ctrl
   - ''
-  - Gui+C
-  - Gui+V
-  - ''
-  - ''
+  - コピー
+  - ペースト
   - ''
   - ''
   - ''
+  - ''
+  - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -165,11 +153,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  WIN:
+  Win:
   - Q
   - W
   - E
@@ -180,7 +164,7 @@ layers:
   - I
   - O
   - P
-  - {t: A, h: '&mod_ctrl_alt'}
+  - {t: A, h: Ctrl+Alt}
   - S
   - D
   - F
@@ -189,7 +173,7 @@ layers:
   - J
   - K
   - L
-  - {t: ':', h: '&mod_ctrl_shift', s: ;}
+  - {t: ':', h: Ctrl+Shift, s: ';'}
   - Z
   - X
   - C
@@ -199,74 +183,75 @@ layers:
   - M
   - ','
   - .
-  - {t: '''', h: '&mod_ctrl_alt'}
-  - ''
-  - ''
-  - {t: LCTRL, h: EMACS}
-  - LCMD
-  - {t: LANG2, h: LSHFT}
-  - {t: ESC, h: LALT}
-  - {t: SPACE, h: '1'}
-  - {t: ENTER, h: '2'}
-  - ''
-  - ''
-  EMACS:
+  - {t: '''', h: Ctrl+Alt}
+  - {t: Ctrl, h: Emacs}
+  - Win
+  - {t: 英数, h: Shift}
+  - {t: Esc, h: Alt}
+  - {t: Space, h: 数字}
+  - {t: Enter, h: 設定}
+  Emacs:
   - Ctl+Q
   - Ctl+W
-  - END
+  - End
   - Ctl+R
   - Ctl+T
   - Ctl+Y
   - Ctl+U
   - Ctl+I
-  - UP
+  - ↑
   - Ctl+O
-  - HOME
+  - Home
   - Ctl+S
-  - DEL
-  - RIGHT
+  - Del
+  - →
   - Ctl+G
-  - BSPC
+  - BS
   - Ctl+J
-  - '&macro_kill_line'
+  - 行削除
   - Ctl+L
   - Ctl+;
   - Ctl+Z
   - Ctl+X
   - Ctl+C
   - Ctl+V
-  - LEFT
-  - DOWN
+  - ←
+  - ↓
   - Ctl+M
   - Ctl+,
   - Ctl+.
   - Ctl+'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - Ctl+SPACE
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+Space
   - {t: ▽, type: trans}
 combos:
 - p: [10, 11]
-  k: TAB
+  k: Tab
+  l: [Mac, Win]
 - p: [7, 8]
-  k: {t: '-', s: _}
+  k: {t: '-', s: '_'}
+  l: [Mac, Win]
 - p: [8, 9]
-  k: {t: '=', s: +}
+  k: {t: '=', s: '+'}
+  l: [Mac, Win]
 - p: [18, 19]
   k: {t: '''', s: '"'}
+  l: [Mac, Win]
 - p: [28, 29]
-  k: {t: /, s: '?'}
+  k: {t: '/', s: '?'}
+  l: [Mac, Win]
 - p: [0, 1]
   k: {t: '`', s: '~'}
+  l: [Mac, Win]
 - p: [6, 7]
-  k: {t: '|', s: \}
+  k: {t: '|', s: '\'}
+  l: [Mac, Win]
 - p: [16, 17]
   k: {t: '[', s: '{'}
+  l: [Mac, Win]
 - p: [17, 18]
   k: {t: ']', s: '}'}
+  l: [Mac, Win]
