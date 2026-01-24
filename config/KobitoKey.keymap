@@ -49,6 +49,12 @@
             key-positions = <28 29>;
             bindings = <&kp QMARK>;
         };
+
+        combo_grave {
+            timeout-ms = <50>;
+            key-positions = <0 1>;
+            bindings = <&kp GRAVE>;
+        };
     };
 
     keymap {
