@@ -43,6 +43,12 @@
             key-positions = <18 19>;
             bindings = <&kp SQT>;
         };
+
+        combo_question {
+            timeout-ms = <50>;
+            key-positions = <28 29>;
+            bindings = <&kp QMARK>;
+        };
     };
 
     keymap {
