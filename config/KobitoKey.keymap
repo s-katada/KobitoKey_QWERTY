@@ -233,10 +233,10 @@
         layer3 {
             label = "3";
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans    &trans  &trans
+&trans  &trans     &trans     &trans     &trans    &mkp MB1  &mkp MB2  &mkp MB3  &trans  &trans
+&trans  &kp LSHFT  &trans     &trans     &trans    &trans    &trans    &trans    &trans  &trans
+&trans  &kp LCTRL  &kp LG(C)  &kp LG(V)  &trans    &trans    &trans    &trans    &trans  &trans
+&trans  &trans     &trans     &trans     &trans    &trans    &trans    &trans    &trans  &trans
             >;
         };
 
