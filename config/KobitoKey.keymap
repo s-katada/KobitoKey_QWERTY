@@ -206,7 +206,7 @@
 &kp Q      &kp W     &kp E     &kp R        &kp T      &kp Y     &kp U        &kp I      &kp O      &ht_cmd_shift 0 P
 &kp A      &kp S     &kp D     &kp F        &kp G      &kp H     &kp J        &kp K      &kp L      &ht_cmd_ctrl 0 0
 &kp Z      &kp X     &kp C     &kp V        &kp B      &kp N     &kp M        &kp COMMA  &kp DOT    &ht_cmd_shift_ctrl 0 APOS
-&none      &none     &kp LCMD  &kp LCTRL  &mt LSHFT LANG2  &lt 3 ESC  &lt 1 SPACE  &lt 2 ENTER  &none      &none
+&none      &none     &kp LCMD  &kp LCTRL  &mt LSHFT LANG2  &mt LALT ESC  &lt 1 SPACE  &lt 2 ENTER  &none      &none
             >;
         };
 
@@ -246,7 +246,7 @@
 &kp Q      &kp W     &kp E      &kp R        &kp T            &kp Y      &kp U        &kp I        &kp O      &ht_cmd_shift 0 P
 &kp A      &kp S     &kp D      &kp F        &kp G            &kp H      &kp J        &kp K        &kp L      &ht_cmd_ctrl 0 0
 &kp Z      &kp X     &kp C      &kp V        &kp B            &kp N      &kp M        &kp COMMA    &kp DOT    &ht_cmd_shift_ctrl 0 APOS
-&none      &none     &lt 5 LCTRL  &kp LCMD   &mt LSHFT LANG2    &lt 3 ESC  &lt 1 SPACE  &lt 2 ENTER  &none      &none
+&none      &none     &lt 5 LCTRL  &kp LCMD   &mt LSHFT LANG2    &mt LALT ESC  &lt 1 SPACE  &lt 2 ENTER  &none      &none
             >;
         };
 
