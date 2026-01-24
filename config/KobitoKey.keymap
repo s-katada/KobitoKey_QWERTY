@@ -21,6 +21,48 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
+
+        mm_minus_under: mm_minus_under {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_plus_equal: mm_plus_equal {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PLUS>, <&kp EQUAL>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_squote_dquote: mm_squote_dquote {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp DQT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_qmark_bslash: mm_qmark_bslash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp QMARK>, <&kp BSLH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_grave_tilde: mm_grave_tilde {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE>, <&kp TILDE>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mm_pipe_slash: mm_pipe_slash {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE>, <&kp SLASH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
@@ -35,37 +77,37 @@
         combo_minus {
             timeout-ms = <50>;
             key-positions = <7 8>;
-            bindings = <&kp MINUS>;
+            bindings = <&mm_minus_under>;
         };
 
         combo_plus {
             timeout-ms = <50>;
             key-positions = <8 9>;
-            bindings = <&kp PLUS>;
+            bindings = <&mm_plus_equal>;
         };
 
         combo_squote {
             timeout-ms = <50>;
             key-positions = <18 19>;
-            bindings = <&kp SQT>;
+            bindings = <&mm_squote_dquote>;
         };
 
         combo_question {
             timeout-ms = <50>;
             key-positions = <28 29>;
-            bindings = <&kp QMARK>;
+            bindings = <&mm_qmark_bslash>;
         };
 
         combo_grave {
             timeout-ms = <50>;
             key-positions = <0 1>;
-            bindings = <&kp GRAVE>;
+            bindings = <&mm_grave_tilde>;
         };
 
         combo_pipe {
             timeout-ms = <50>;
             key-positions = <5 6>;
-            bindings = <&kp PIPE>;
+            bindings = <&mm_pipe_slash>;
         };
     };
 
