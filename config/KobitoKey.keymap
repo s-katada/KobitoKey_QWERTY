@@ -264,10 +264,10 @@
         layer1 {
             label = "1";
             bindings = <
-&kp N1     &kp N2  &kp N3  &kp N4     &kp N5  &kp N6     &kp N7     &kp N8    &kp N9     &kp N0
-&trans     &trans  &trans  &trans     &trans  &kp LEFT   &kp DOWN   &kp UP    &kp RIGHT  &trans
-&trans     &trans  &trans  &trans     &trans  &trans     &trans     &mm_lbkt_lbrc    &mm_rbkt_rbrc     &trans
-&trans     &trans  &trans  &trans  &mt LSHFT LANG1  &trans     &trans     &trans    &trans     &trans
+&kp N1      &kp N2    &kp N3    &kp N4     &kp N5     &kp N6     &kp N7     &kp N8           &kp N9           &kp N0
+&kp EXCL    &kp AT    &kp HASH  &kp DLLR   &kp PRCNT  &kp LEFT   &kp DOWN   &kp UP           &kp RIGHT        &trans
+&kp CARET   &kp AMPS  &kp ASTRK &kp LPAR   &kp RPAR   &trans     &trans     &mm_lbkt_lbrc    &mm_rbkt_rbrc    &trans
+&trans      &trans    &trans    &trans     &mt LSHFT LANG1  &trans     &trans     &trans           &trans           &trans
             >;
         };
 
