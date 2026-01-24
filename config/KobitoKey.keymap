@@ -182,7 +182,7 @@
         layer3 {
             label = "3";
             bindings = <
-&trans       &trans  &kp LG(RIGHT)  &trans     &trans    &trans    &trans    &trans     &trans  &trans
+&trans       &trans  &kp LG(RIGHT)  &trans     &trans    &mkp MB1  &mkp MB2  &mkp MB3   &trans  &trans
 &kp LG(LEFT) &trans  &kp DEL        &kp RIGHT  &trans    &kp BSPC  &trans    &kp LC(K)  &trans  &trans
 &trans       &trans  &trans         &trans     &kp LEFT  &trans    &trans    &trans     &trans  &trans
 &kp LSHFT    &trans  &kp LCMD       &kp LALT   &to 0     &trans    &trans    &trans     &to 0   &kp RALT
