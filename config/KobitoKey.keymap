@@ -46,7 +46,7 @@
         mm_bslash_qmark: mm_bslash_qmark {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp BSLH>, <&kp QMARK>;
+            bindings = <&kp BSLH>, <&kp SLASH>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
