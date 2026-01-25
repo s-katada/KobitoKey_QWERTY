@@ -249,6 +249,20 @@
             key-positions = <17 18>;
             bindings = <&mm_rbkt_rbrc>;
         };
+
+        combo_cmd_alt {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&mod_cmd_alt>;
+            layers = <0>;
+        };
+
+        combo_ctrl_alt {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&mod_ctrl_alt>;
+            layers = <4>;
+        };
     };
 
     keymap {
@@ -257,9 +271,9 @@
         default_layer {
             bindings = <
 &kp Q      &kp W     &kp E     &kp R        &kp T      &kp Y     &kp U        &kp I      &kp O      &kp P
-&ht_cmd_alt 0 A  &kp S     &kp D     &kp F        &kp G      &kp H     &kp J        &kp K      &kp L      &ht_cmd_shift_colon 0 0
+&kp A      &kp S     &kp D     &kp F        &kp G      &kp H     &kp J        &kp K      &kp L      &ht_cmd_shift_colon 0 0
 &kp Z      &kp X     &kp C     &kp V        &kp B      &kp N     &kp M        &kp COMMA  &kp DOT    &ht_cmd_ctrl 0 APOS
-&none      &none     &kp LCMD  &kp LCTRL  &mt LSHFT LANG2  &mt LALT ESC  &lt 1 SPACE  &lt 2 ENTER  &none      &none
+&none      &none     &mt LCMD BSPC  &kp LCTRL  &mt LSHFT LANG2  &mt LALT ESC  &lt 1 SPACE  &lt 2 ENTER  &none      &none
             >;
         };
 
@@ -297,7 +311,7 @@
             label = "WIN";
             bindings = <
 &kp Q      &kp W     &kp E      &kp R        &kp T            &kp Y      &kp U        &kp I        &kp O      &kp P
-&ht_ctrl_alt 0 A  &kp S     &kp D      &kp F        &kp G            &kp H      &kp J        &kp K        &kp L      &ht_ctrl_shift_colon 0 0
+&kp A      &kp S     &kp D      &kp F        &kp G            &kp H      &kp J        &kp K        &kp L      &ht_ctrl_shift_colon 0 0
 &kp Z      &kp X     &kp C      &kp V        &kp B            &kp N      &kp M        &kp COMMA    &kp DOT    &ht_ctrl_alt 0 APOS
 &none      &none     &lt 5 LCTRL  &kp LCMD   &mt LSHFT LANG2    &mt LALT ESC  &lt 1 SPACE  &lt 2 ENTER  &none      &none
             >;
