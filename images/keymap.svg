@@ -282,8 +282,8 @@ path.combo {
 <text x="0" y="24" class="key hold layer-activator">設定</text>
 </a></g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="376" y="15" width="28" height="26" class="combo"/>
-<text x="390" y="39" class="combo hold">Cmd+Opt</text>
+<rect rx="6" ry="6" x="166" y="71" width="28" height="26" class="combo"/>
+<text x="180" y="95" class="combo hold">Cmd+Opt</text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="46" y="71" width="28" height="26" class="combo"/>
@@ -907,8 +907,8 @@ path.combo {
 <text x="0" y="24" class="key hold layer-activator">設定</text>
 </a></g>
 <g class="combo combopos-0">
-<rect rx="6" ry="6" x="376" y="15" width="28" height="26" class="combo"/>
-<text x="390" y="39" class="combo hold"><tspan style="font-size: 88%">Ctrl+Alt</tspan></text>
+<rect rx="6" ry="6" x="166" y="71" width="28" height="26" class="combo"/>
+<text x="180" y="95" class="combo hold"><tspan style="font-size: 88%">Ctrl+Alt</tspan></text>
 </g>
 <g class="combo combopos-1">
 <rect rx="6" ry="6" x="46" y="71" width="28" height="26" class="combo"/>

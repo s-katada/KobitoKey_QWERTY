@@ -252,14 +252,14 @@
 
         combo_cmd_alt {
             timeout-ms = <50>;
-            key-positions = <5 6>;
+            key-positions = <12 13>;
             bindings = <&mod_cmd_alt>;
             layers = <0>;
         };
 
         combo_ctrl_alt {
             timeout-ms = <50>;
-            key-positions = <5 6>;
+            key-positions = <12 13>;
             bindings = <&mod_ctrl_alt>;
             layers = <4>;
         };

@@ -228,10 +228,10 @@ layers:
   - Ctl+Space
   - {t: ▽, type: trans}
 combos:
-- p: [5, 6]
+- p: [12, 13]
   k: {h: Cmd+Opt}
   l: [Mac]
-- p: [5, 6]
+- p: [12, 13]
   k: {h: Ctrl+Alt}
   l: [Win]
 - p: [10, 11]
