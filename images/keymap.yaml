@@ -127,9 +127,9 @@ layers:
   - 中クリック
   - ''
   - {t: ▽, type: trans}
-  - 戻る
+  - {t: 戻る, h: Shift}
   - 進む
-  - Shift
+  - ''
   - ''
   - ''
   - ''
