@@ -34,12 +34,7 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
         cpi = <600>;
-
-        /* スリープモード無効化（即座に反応するようにする） */
-        run-downshift-time-ms = <4294967295>;
-        rest1-downshift-time-ms = <4294967295>;
-        rest2-downshift-time-ms = <4294967295>;
-
+        
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
