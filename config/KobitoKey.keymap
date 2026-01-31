@@ -291,8 +291,8 @@
             label = "2";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp C_PREV  &kp C_PP  &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP
-&none         &none         &none         &none         &bt BT_CLR      &none    &none    &none    &none    &trans
-&to 0         &to 4         &none         &none         &bt BT_CLR_ALL  &none    &none    &none    &none    &trans
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5          &kp F6   &kp F7   &kp F8   &kp F9   &kp F10
+&to 0         &to 4         &none         &none         &bt BT_CLR      &kp F11  &kp F12  &kp F13  &none    &trans
 &trans        &trans        &trans        &trans        &trans          &kp DEL  &trans   &trans   &trans   &trans
             >;
         };
@@ -300,7 +300,7 @@
         layer3 {
             label = "3";
             bindings = <
-&kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &none      &none      &none     &mkp MB1  &mkp MB2  &mkp MB3  &none   &trans
+&kp LG(LS(LBKT))  &kp LG(LS(RBKT))  &none      &none      &none     &mkp MB1  &mkp MB2  &mkp MB2  &mkp MB3  &trans
 &mt LSHFT LG(LBKT)  &kp LG(RBKT)    &none      &none      &none     &none     &none     &none     &none   &trans
 &kp LCTRL         &none             &kp LG(C)  &kp LG(V)  &none     &none     &none     &none     &none   &trans
 &trans            &trans            &trans     &trans     &trans    &trans    &trans    &trans    &trans  &trans
