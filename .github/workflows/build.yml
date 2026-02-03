@@ -9,6 +9,7 @@ jobs:
       archive_name: firmware_SU
 
   build_yoru:
+    needs: build_su
     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
     with:
       build_matrix_path: build_yoru.yaml
