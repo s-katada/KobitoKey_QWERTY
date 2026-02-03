@@ -204,13 +204,13 @@
 
         combo_minus {
             timeout-ms = <50>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
             bindings = <&mm_minus_under>;
         };
 
         combo_plus {
             timeout-ms = <50>;
-            key-positions = <7 8>;
+            key-positions = <8 9>;
             bindings = <&mm_equal_plus>;
         };
 
@@ -234,7 +234,7 @@
 
         combo_pipe {
             timeout-ms = <50>;
-            key-positions = <5 6>;
+            key-positions = <6 7>;
             bindings = <&mm_pipe_bslash>;
         };
 
