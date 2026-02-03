@@ -35,7 +35,7 @@ layers:
   - M
   - ','
   - .
-  - {t: '''', h: Cmd+Ctrl}
+  - {t: '/', s: '?'}
   - {t: BS, h: Cmd}
   - Ctrl
   - {t: 英数, h: Shift}
@@ -183,7 +183,7 @@ layers:
   - M
   - ','
   - .
-  - {t: '''', h: Ctrl+Alt}
+  - {t: '/', s: '?'}
   - {t: Ctrl, h: Emacs}
   - Win
   - {t: 英数, h: Shift}
@@ -246,8 +246,11 @@ combos:
 - p: [18, 19]
   k: {t: '''', s: '"'}
   l: [Mac, Win]
-- p: [28, 29]
+- p: [27, 28]
   k: {t: '/', s: '?'}
+  l: [Mac, Win]
+- p: [25, 26]
+  k: BS
   l: [Mac, Win]
 - p: [0, 1]
   k: {t: '`', s: '~'}
