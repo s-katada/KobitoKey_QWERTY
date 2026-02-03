@@ -2,11 +2,11 @@ include:
  - board: seeeduino_xiao_ble
    shield: KobitoKey_left rgbled_adapter
    snippet: studio-rpc-usb-uart
-   cmake-args: -DEXTRA_CONF_FILE=variants/su.conf
+   cmake-args: -DEXTRA_CONF_FILE=${ZMK_CONFIG}/variants/su.conf
 
  - board: seeeduino_xiao_ble
    shield: KobitoKey_right rgbled_adapter
-   cmake-args: -DEXTRA_CONF_FILE=variants/su.conf
+   cmake-args: -DEXTRA_CONF_FILE=${ZMK_CONFIG}/variants/su.conf
 
  - board: seeeduino_xiao_ble
    shield: settings_reset
