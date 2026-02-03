@@ -10,4 +10,3 @@ include:
 
  - board: seeeduino_xiao_ble
    shield: settings_reset
-   artifact-name: settings_reset_su

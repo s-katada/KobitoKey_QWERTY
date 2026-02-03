@@ -7,7 +7,3 @@ include:
  - board: seeeduino_xiao_ble
    shield: KobitoKey_right rgbled_adapter
    cmake-args: -DEXTRA_CONF_FILE=\${ZMK_CONFIG}/variants/yoru.conf
-
- - board: seeeduino_xiao_ble
-   shield: settings_reset
-   artifact-name: settings_reset_yoru
