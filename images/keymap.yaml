@@ -31,7 +31,7 @@ layers:
   - M
   - ','
   - .
-  - {t: '/', s: '?'}
+  - {t: '/', h: Cmd+Ctrl, s: '?'}
   - {t: BS, h: Cmd}
   - Ctrl
   - {t: 英数, h: Shift}
