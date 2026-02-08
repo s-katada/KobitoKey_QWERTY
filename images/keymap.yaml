@@ -68,7 +68,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '''', h: Ctrl+Alt}
+  - {t: '/', h: Ctrl+Alt, s: '?'}
   - Win
   - {t: Ctrl, h: '5'}
   - {t: ▽, type: trans}
