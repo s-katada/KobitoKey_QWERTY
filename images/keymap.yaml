@@ -69,10 +69,10 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: '/', h: Ctrl+Alt, s: '?'}
-  - Win
+  - {t: BS, h: Alt}
   - {t: Ctrl, h: '5'}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: Esc, h: Win}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   '2':
