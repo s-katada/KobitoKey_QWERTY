@@ -37,7 +37,7 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <1200>; /* センサー感度（高いほど少ない動きで大きく動く） */
+        cpi = <1000>; /* センサー感度（高いほど少ない動きで大きく動く） */
 
 
         evt-type = <INPUT_EV_REL>;
@@ -88,7 +88,7 @@
 
     input-processors =
         <&sensor_rotation_right>,
-        <&zip_temp_layer 3 500>; /* オートマウスレイヤーの指定とトラボ操作及びマウスボタン押下後に滞留する時間 */
+        <&zip_temp_layer 4 500>; /* オートマウスレイヤーの指定とトラボ操作及びマウスボタン押下後に滞留する時間 */
 };
 
 &zip_temp_layer {

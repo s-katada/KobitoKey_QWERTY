@@ -38,6 +38,43 @@ layers:
   - {t: Esc, h: Alt}
   - {t: Space, h: 数字}
   - {t: Enter, h: 設定}
+  Win:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ':', h: Ctrl+Shift, s: ';'}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: '''', h: Ctrl+Alt}
+  - Win
+  - {t: Ctrl, h: Emacs}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   数字:
   - '1'
   - '2'
@@ -97,7 +134,7 @@ layers:
   - ''
   - {t: ▽, type: trans}
   - {t: Mac, h: 切替}
-  - {t: Win, h: 切替}
+  - {t: Win, h: トグル}
   - ''
   - ''
   - BT全クリア
@@ -149,43 +186,6 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Win:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - A
-  - S
-  - D
-  - F
-  - G
-  - H
-  - J
-  - K
-  - L
-  - {t: ':', h: Ctrl+Shift, s: ';'}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - {t: '/', s: '?'}
-  - {t: Ctrl, h: Emacs}
-  - Win
-  - {t: 英数, h: Shift}
-  - {t: Esc, h: Alt}
-  - {t: Space, h: 数字}
-  - {t: Enter, h: 設定}
   Emacs:
   - Ctl+Q
   - Ctl+W
