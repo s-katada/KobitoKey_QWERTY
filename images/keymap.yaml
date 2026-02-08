@@ -197,7 +197,7 @@ layers:
   - Ctl+I
   - Ctl+O
   - ↑
-  - Home
+  - {t: Home, s: 2tap Ctl+A}
   - Ctl+S
   - Del
   - →
