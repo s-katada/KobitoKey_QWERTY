@@ -94,11 +94,11 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mm_kill_line: mm_kill_line {
-            compatible = "zmk,behavior-mod-morph";
+        td_kill_line: td_kill_line {
+            compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
+            tapping-term-ms = <200>;
             bindings = <&kp LC(K)>, <&macro_kill_line>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         mm_qmark_slash: mm_qmark_slash {
@@ -347,9 +347,9 @@
         layer5 {
             bindings = <
 &kp LC(Q)  &kp LC(W)  &kp END      &kp LC(R)  &kp LC(T)    &kp LC(Y)  &kp LC(U)        &kp LC(I)  &kp LC(O)  &kp UP
-&kp HOME   &kp LC(S)  &kp DEL      &kp RIGHT  &kp LC(G)    &kp BSPC   &kp LC(J)        &mm_kill_line  &kp LC(L)  &kp LC(SEMI)
+&kp HOME   &kp LC(S)  &kp DEL      &kp RIGHT  &kp LC(G)    &kp BSPC   &kp LC(J)        &td_kill_line  &kp LC(L)  &kp LC(SEMI)
 &kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)  &kp LEFT     &kp DOWN   &kp LC(M)        &kp LC(COMMA)  &kp LC(DOT)  &kp LC(APOS)
-&trans     &trans     &trans       &trans     &trans       &trans     &kp LC(SPACE)    &trans     &trans     &trans
+&trans     &trans     &trans       &trans     &trans       &trans     &trans           &trans     &trans     &trans
             >;
         };
     };
