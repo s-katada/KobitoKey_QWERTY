@@ -195,8 +195,8 @@ layers:
   - Ctl+Y
   - Ctl+U
   - Ctl+I
-  - ↑
   - Ctl+O
+  - ↑
   - Home
   - Ctl+S
   - Del
@@ -204,7 +204,7 @@ layers:
   - Ctl+G
   - BS
   - Ctl+J
-  - 行削除
+  - {t: Ctl+K, s: 行削除}
   - Ctl+L
   - Ctl+;
   - Ctl+Z
