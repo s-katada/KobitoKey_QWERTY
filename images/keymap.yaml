@@ -1,7 +1,7 @@
 layout:
   qmk_info_json: images/layout.json
 layers:
-  Mac:
+  '0':
   - Q
   - W
   - E
@@ -36,9 +36,9 @@ layers:
   - Ctrl
   - {t: 英数, h: Shift}
   - {t: Esc, h: Alt}
-  - {t: Space, h: 数字}
-  - {t: Enter, h: 設定}
-  Win:
+  - {t: Space, h: '2'}
+  - {t: Enter, h: '3'}
+  '1':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -70,12 +70,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: '''', h: Ctrl+Alt}
   - Win
-  - {t: Ctrl, h: Emacs}
+  - {t: Ctrl, h: '5'}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  数字:
+  '2':
   - '1'
   - '2'
   - '3'
@@ -112,7 +112,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  設定:
+  '3':
   - {t: BT1}
   - {t: BT2}
   - {t: BT3}
@@ -133,8 +133,8 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: Mac, h: 切替}
-  - {t: Win, h: トグル}
+  - {t: Mac, h: to 0}
+  - {t: Win, h: tog 1}
   - ''
   - ''
   - BT全クリア
@@ -149,7 +149,7 @@ layers:
   - Del
   - {t: ▽, type: trans}
   - {type: held}
-  マウス:
+  '4':
   - 前タブ
   - 次タブ
   - ''
@@ -186,7 +186,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  Emacs:
+  '5':
   - Ctl+Q
   - Ctl+W
   - End
@@ -226,37 +226,37 @@ layers:
 combos:
 - p: [12, 13]
   k: {h: Cmd+Opt}
-  l: [Mac]
+  l: ['0']
 - p: [12, 13]
   k: {h: Ctrl+Alt}
-  l: [Win]
+  l: ['1']
 - p: [10, 11]
   k: Tab
-  l: [Mac, Win]
+  l: ['0', '1']
 - p: [7, 8]
   k: {t: '-', s: '_'}
-  l: [Mac, Win]
+  l: ['0', '1']
 - p: [8, 9]
   k: {t: '=', s: '+'}
-  l: [Mac, Win]
+  l: ['0', '1']
 - p: [18, 19]
   k: {t: '''', s: '"'}
-  l: [Mac, Win]
+  l: ['0', '1']
 - p: [27, 28]
   k: {t: '/', s: '?'}
-  l: [Mac, Win]
+  l: ['0', '1']
 - p: [25, 26]
   k: BS
-  l: [Mac, Win]
+  l: ['0', '1']
 - p: [0, 1]
   k: {t: '`', s: '~'}
-  l: [Mac, Win]
+  l: ['0', '1']
 - p: [6, 7]
   k: {t: '|', s: '\'}
-  l: [Mac, Win]
+  l: ['0', '1']
 - p: [16, 17]
   k: {t: '[', s: '{'}
-  l: [Mac, Win]
+  l: ['0', '1']
 - p: [17, 18]
   k: {t: ']', s: '}'}
-  l: [Mac, Win]
+  l: ['0', '1']
