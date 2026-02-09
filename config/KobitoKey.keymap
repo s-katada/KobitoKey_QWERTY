@@ -306,7 +306,7 @@
             timeout-ms = <50>;
             key-positions = <11 12>;
             bindings = <&tog 6>;
-            layers = <1>;
+            layers = <1 6>;
         };
     };
 
@@ -327,7 +327,7 @@
 &trans     &trans    &trans    &trans       &trans     &trans    &trans       &trans     &trans     &trans
 &trans     &trans    &trans    &trans       &trans     &trans    &trans       &trans     &trans     &ht_ctrl_shift_colon 0 0
 &trans     &trans    &trans    &trans       &trans     &trans    &trans       &trans     &trans     &ht_ctrl_alt_qmark 0 0
-&trans     &trans    &mt LALT BSPC  &lt 5 LCTRL  &trans    &mt LCMD ESC  &trans       &trans     &trans     &trans
+&trans     &trans    &mt LALT BSPC  &lt 5 LGUI  &trans    &mt LCMD ESC  &trans       &trans     &trans     &trans
             >;
         };
 
