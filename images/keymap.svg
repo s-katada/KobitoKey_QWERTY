@@ -348,8 +348,8 @@ path.combo {
 </g>
 </g>
 </g>
-<g transform="translate(30, 280)" class="layer-Win">
-<text x="0" y="28" class="label" id="Win">Win:</text>
+<g transform="translate(30, 280)" class="layer-Win/Linux">
+<text x="0" y="28" class="label" id="WinLinux">Win/Linux:</text>
 <g transform="translate(0, 56)">
 <g transform="translate(28, 28)" class="key trans keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -888,9 +888,10 @@ path.combo {
 </g>
 <g transform="translate(84, 140)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#Win">
-<text x="0" y="0" class="key tap layer-activator">Win</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-1.2em">Win/</tspan><tspan x="0" dy="1.2em">Linux</tspan>
+</text>
+<text x="0" y="24" class="key hold">toggle</text>
 </g>
 <g transform="translate(140, 140)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
