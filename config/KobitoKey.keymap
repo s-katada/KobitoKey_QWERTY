@@ -301,6 +301,13 @@
             bindings = <&mod_ctrl_alt>;
             layers = <1>;
         };
+
+        combo_neovim_toggle {
+            timeout-ms = <50>;
+            key-positions = <11 12>;
+            bindings = <&tog 6>;
+            layers = <1>;
+        };
     };
 
     keymap {
@@ -357,6 +364,15 @@
 &td_home_ctla  &kp LC(S)  &kp DEL      &kp RIGHT  &kp LC(G)    &kp BSPC   &kp LC(J)        &td_kill_line  &kp LC(L)  &kp LC(SEMI)
 &kp LC(Z)  &kp LC(X)  &kp LC(C)    &kp LC(V)  &kp LEFT     &kp DOWN   &kp LC(M)        &kp LC(COMMA)  &kp LC(DOT)  &kp LC(APOS)
 &trans     &trans     &trans       &trans     &trans       &trans     &trans           &trans     &trans     &trans
+            >;
+        };
+
+        layer6 {
+            bindings = <
+&trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans
+&trans &trans &trans &trans &trans  &trans &trans &trans &trans &trans
+&trans &trans &trans &kp LCTRL &trans  &trans &trans &trans &trans &trans
             >;
         };
     };
