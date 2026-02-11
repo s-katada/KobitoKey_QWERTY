@@ -308,6 +308,12 @@
             bindings = <&tog 6>;
             layers = <1 6>;
         };
+
+        combo_yu_bspc {
+            timeout-ms = <50>;
+            key-positions = <5 6>;
+            bindings = <&kp BSPC>;
+        };
     };
 
     keymap {
