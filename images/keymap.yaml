@@ -1,7 +1,7 @@
 layout:
   qmk_info_json: images/layout.json
 layers:
-  '0':
+  Mac:
   - Q
   - W
   - E
@@ -36,9 +36,9 @@ layers:
   - Ctrl
   - {t: 英数, h: Shift}
   - {t: Esc, h: Alt}
-  - {t: Space, h: '2'}
-  - {t: Enter, h: '3'}
-  '1':
+  - {t: Space, h: 数字}
+  - {t: Enter, h: 設定}
+  Win/Linux:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -70,12 +70,12 @@ layers:
   - {t: ▽, type: trans}
   - {t: '/', h: Ctrl+Alt, s: '?'}
   - {t: BS, h: Alt}
-  - {t: Ctrl, h: '5'}
+  - {t: Ctrl, h: Emacs}
   - {t: ▽, type: trans}
   - {t: Esc, h: Win}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '2':
+  数字:
   - '1'
   - '2'
   - '3'
@@ -112,7 +112,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
-  '3':
+  設定:
   - {t: BT1}
   - {t: BT2}
   - {t: BT3}
@@ -149,7 +149,7 @@ layers:
   - Del
   - {t: ▽, type: trans}
   - {type: held}
-  '4':
+  マウス:
   - 前タブ
   - 次タブ
   - ''
@@ -186,7 +186,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '5':
+  Emacs:
   - Ctl+Q
   - Ctl+W
   - End
@@ -223,7 +223,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '6':
+  Neovim:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -263,43 +263,43 @@ layers:
 combos:
 - p: [12, 13]
   k: {h: Cmd+Opt}
-  l: ['0']
+  l: [Mac]
 - p: [12, 13]
   k: {h: Ctrl+Alt}
-  l: ['1']
+  l: [Win/Linux]
 - p: [10, 11]
   k: Tab
-  l: ['0', '1']
+  l: [Mac, Win/Linux]
 - p: [7, 8]
   k: {t: '-', s: '_'}
-  l: ['0', '1']
+  l: [Mac, Win/Linux]
 - p: [8, 9]
   k: {t: '=', s: '+'}
-  l: ['0', '1']
+  l: [Mac, Win/Linux]
 - p: [18, 19]
   k: {t: '''', s: '"'}
-  l: ['0', '1']
+  l: [Mac, Win/Linux]
 - p: [27, 28]
   k: {t: '/', s: '?'}
-  l: ['0', '1']
+  l: [Mac, Win/Linux]
 - p: [25, 26]
   k: BS
-  l: ['0', '1']
+  l: [Mac, Win/Linux]
 - p: [0, 1]
   k: {t: '`', s: '~'}
-  l: ['0', '1']
+  l: [Mac, Win/Linux]
 - p: [6, 7]
   k: {t: '|', s: '\'}
-  l: ['0', '1']
+  l: [Mac, Win/Linux]
 - p: [16, 17]
   k: {t: '[', s: '{'}
-  l: ['0', '1']
+  l: [Mac, Win/Linux]
 - p: [17, 18]
   k: {t: ']', s: '}'}
-  l: ['0', '1']
+  l: [Mac, Win/Linux]
 - p: [5, 6]
   k: BS
-  l: ['0', '1']
+  l: [Mac, Win/Linux]
 - p: [11, 12]
   k: {t: Neovim, s: tog 6}
-  l: ['1', '6']
+  l: [Win/Linux, Neovim]
