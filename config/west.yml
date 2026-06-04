@@ -33,9 +33,13 @@ manifest:
       revision: main
 
     # LED
+    # revision を固定。caksoylar main は 2026-02-17 に v0.3 互換 shim を削除
+    # （"Remove v0.3 compatibility shims from adapter"）し、ZMK v0.3 では
+    # rgbled_adapter の赤色LEDエイリアスが解決できずビルドが失敗する。
+    # a3510c9d は最後にグリーンビルドした時点の既知良好版（v0.3互換 shim あり）。
     - name: zmk-rgbled-widget  # <-- led
       remote: caksoylar
-      revision: main
+      revision: a3510c9de46de8b42c803286f4978466c6ea3916
       
   self:
     path: config
