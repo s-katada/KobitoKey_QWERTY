@@ -19,13 +19,15 @@ manifest:
       import: app/west.yml
 
     # PMW3610 ドライバ（外部モジュール）
-    # 無操作（IDLE）後の初回操作でマウス/スクロールが暴走するバグの修正を当てた
-    # fork に固定。badjeff zmk-0.3 に MOTビットガード + アンチワープ + PM action
-    # 再有効化を追加（commit 69a8391 / branch zmk-0.3-fix-runaway）。
+    # kobu の実機検証済み設計に合わせた fork に固定。badjeff zmk-0.3 へ:
+    #  - never-downshift（force-awakeを常時維持＝RESTさせない）で無操作後の暴走を根治
+    #  - buf[0]==0xFF ガベージガード（MOTビットガードは撤去：force-awakeでは遅い動きを誤って捨てるため）
+    #  - CONFIG_PMW3610_MAX_DELTA（部分SPIグリッチの「ギュン」抑止。スクロール側のみ有効）
+    # を追加（commit c241b53 / branch zmk-0.3-fix-runaway）。
     # 上流に戻す場合: remote=badjeff, revision=zmk-0.3 へ戻すだけ。
     - name: zmk-pmw3610-driver
       remote: s-katada
-      revision: 69a83910a61b1fb5e021c9c564c89fffb363e3f4
+      revision: c241b533f2951c28279b421f398b4550ecdf3153
     
     # Sensor-rotation
     - name: zmk-feature-sensor_rotation

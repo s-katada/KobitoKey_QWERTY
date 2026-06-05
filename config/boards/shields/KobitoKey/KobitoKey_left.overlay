@@ -89,7 +89,9 @@
 
     input-processors =
         <&sensor_rotation_right>,
-        <&zip_temp_layer 4 500>; /* オートマウスレイヤーの指定とトラボ操作及びマウスボタン押下後に滞留する時間 */
+        <&zip_temp_layer 4 150>; /* オートマウスレイヤーの指定と滞留時間。500→150msへ短縮（kobu準拠）。
+                                  * 打鍵振動でレイヤーに入っても150msで自動解除され誤爆の体感を大幅低減。
+                                  * 入る/入らないの境界はrequire-prior-idle-ms(350)が担当。 */
 };
 
 &zip_temp_layer {
